@@ -11,7 +11,7 @@ st.set_page_config(page_title="Next Word Predictor", page_icon="🔮")
 model = load_model("next_word_lstm.keras")
 
 # Load the tokenizer
-with open('tokenizer.pickle', 'rb') as handle:
+with open('tokenizer.pkl', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 # Function to predict the next word
