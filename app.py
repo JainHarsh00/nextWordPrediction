@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 st.set_page_config(page_title="Next Word Predictor", page_icon="🔮")
 
 # Load the LSTM Model
-model = load_model("next_word_lstm.keras")
+model = load_model("next_word_lstm.h5", compile=False)
 
 # Load the tokenizer
 with open('tokenizer.pkl', 'rb') as handle:
